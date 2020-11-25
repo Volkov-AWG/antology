@@ -1,0 +1,149 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Your API name"
+  },
+  "servers": [
+    {
+      "url": "http://0.0.0.0:4444"
+    }
+  ],
+  "paths": {
+    "/Anthology": {
+      "get": {
+        "summary": "Get anthology tree",
+        "tags": [
+          "Anthology"
+        ],
+        "responses": {
+          "200": {
+            "description": "An array of blog posts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "example": {
+                      "num": 5,
+                      "name": "Vasily",
+                      "surname": "Pupkin"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create a resource",
+        "tags": [
+          "Anthology"
+        ],
+        "requestBody": {
+          "description": "Create new anthology tree",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "example": {
+                  "name": "something",
+                  "surname": "something"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Null response"
+          },
+          "400": {
+            "description": "Bad request"
+          }
+        }
+      }
+    },
+    "/Anthology/{id}": {
+      "get": {
+        "summary": "Info for a specific resource",
+        "tags": [
+          "Anthology"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "The id of the resource to retrieve",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Expected response to a valid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "example": {
+                    "id": 5,
+                    "name": "something"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update a specific item",
+        "tags": [
+          "Anthology"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "The id of the resource to update",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Updated fields for resource",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "example": {
+                  "id": 2,
+                  "name": "something"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Expected response to a valid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "example": {
+                    "id": 5,
+                    "name": "updated name"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

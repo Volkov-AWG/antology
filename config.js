@@ -1,10 +1,10 @@
 const config = {
     db: {
       user: 'postgres',
-      pass: 'changeme',
+      password: 'changeme',
       host: '0.0.0.0',
       port: '1111',
-      dbName: 'postgres'
+      database: 'postgres'
     },
 };
 
