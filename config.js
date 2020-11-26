@@ -6,6 +6,9 @@ const config = {
       port: '1111',
       database: 'postgres'
     },
+    tables:{
+        tree: 'anthologyTree'
+    }
 };
 
 module.exports = config;

@@ -20,6 +20,26 @@ class Db {
             return cc.rows;
         }
     }
+    async insert(query) {
+      console.log(query);
+      let res ='';
+        const client = await this.pool
+            .connect()
+            .catch(err => {
+                console.log("pool .connect ->", err);
+            });
+        if (client !== undefined) {
+            try {
+                res = await client.query(query);
+            } catch (e) {
+                console.log(e); // eslint-disable-line no-console
+                return e;
+            } finally {
+                client.release();
+            }
+        }
+        return res
+    }
 }
 
 module.exports = Db;

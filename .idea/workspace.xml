@@ -20,13 +20,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46a9a893-bfd4-41a9-ab83-c7e57cf7c939" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swaggerConfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/Interface.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init.sql/Tables.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/Db.js" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/AnthologyTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/AnthologyTree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-js/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-js/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-js/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-js/client/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/client/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-js/client/core.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/client/core.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-js/client/core.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/client/core.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-js/client/library.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/client/library.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-js/client/library.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/client/library.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-js/client/library.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/client/library.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-js/library/modules/_core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/library/modules/_core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-js/library/modules/_shared.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/library/modules/_shared.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-js/library/modules/es7.string.at.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/library/modules/es7.string.at.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-js/modules/_core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/modules/_core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-js/modules/_shared.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/modules/_shared.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-js/modules/es7.string.at.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/modules/es7.string.at.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-js/postinstall.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/postinstall.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/is-core-module/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-core-module/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/is-core-module/core.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-core-module/core.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/is-core-module/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-core-module/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/pug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resolve/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resolve/appveyor.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/appveyor.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resolve/lib/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/lib/async.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resolve/lib/core.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/lib/core.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resolve/lib/sync.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/lib/sync.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resolve/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resolve/readme.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/readme.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/shadowed_core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/shadowed_core.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swaggerConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/swaggerConfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +71,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -49,6 +84,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -79,7 +115,9 @@
       <workItem from="1605172853658" duration="9821000" />
       <workItem from="1605609720427" duration="1224000" />
       <workItem from="1606139020413" duration="9363000" />
-      <workItem from="1606312880013" duration="5694000" />
+      <workItem from="1606312880013" duration="6566000" />
+      <workItem from="1606373490379" duration="6789000" />
+      <workItem from="1606395609781" duration="6850000" />
     </task>
     <servers />
   </component>
@@ -96,12 +134,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2699" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1605682260952">
+    <state x="2699" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1606388935515">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2699" y="311" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/3840.0.1080.1920/0.27.1920.1053@1920.0.1920.1080" timestamp="1605682260952" />
+    <state x="2699" y="311" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/3840.0.1080.1920/0.27.1920.1053@1920.0.1920.1080" timestamp="1606388935515" />
     <state x="2405" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1606313243023">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

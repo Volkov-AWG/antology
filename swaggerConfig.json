@@ -25,9 +25,15 @@
                   "type": "array",
                   "items": {
                     "example": {
-                      "num": 5,
-                      "name": "Vasily",
-                      "surname": "Pupkin"
+                      "List of anthology tree": [
+                        {
+                          "name": "treee name",
+                          "id" : 100,
+                          "content": [
+                            {"node": "value"}
+                          ]
+                        }
+                      ]
                     }
                   }
                 }
