@@ -1,12 +1,22 @@
 const DB = require('../classes/Db');
+const Query = require('../classes/Query');
+
 const config = require('../config');
 const db = new DB(config.db);
+const query = new Query(config.tables.tree)
 
-  const  getAnthology = async (request, response) => {
-    const res = await db.selectQuery(`Select content from ${config.tables.tree}`);
+  const  getAnthologies = async (request, response) => {
+    const res = await db.selectQuery(query.SelectAllTrees());
     console.log(res);
     response.status(200).json(res);
   }
+
+  const  getAnthology = async (request, response) => {
+    const res = await db.selectQuery(query.SelectTreeById(request.query.id));
+    console.log(res[0].content);
+    response.status(200).json(res[0].content);
+  }
+
   const addAnthology = async (request, response) => {
     let res = '';
     const body = [];
@@ -16,12 +26,9 @@ const db = new DB(config.db);
     await request.on("end", async () => {
       const parsedBody = Buffer.concat(body).toString();
       const message = parsedBody.split('=')[1];
-      console.log(`Body: ${parsedBody}`);
-      const data = JSON.parse(parsedBody);
-      console.log(`message: ${message}`);
-      res = await db.insert(`insert into ${config.tables.tree}(name, content, description) values('${data.name}','${JSON.stringify(data.content)}', '');`);
+      res = await db.insert(query.InsertTree(JSON.parse(parsedBody)));
       console.log(`message: ${JSON.stringify(res)}`);
-      response.status(200).json({command:res.name.command, rowCount:res.name.rowCount});
+      response.status(200).json({command:res.command, rowCount:res.rowCount});
     });
   }
 
@@ -36,5 +43,6 @@ module.exports = {
     getAnthology,
     addAnthology,
   updateAnthology,
-  deleteAnthology
+  deleteAnthology,
+  getAnthologies
 }

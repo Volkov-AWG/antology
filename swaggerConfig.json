@@ -6,15 +6,18 @@
   },
   "servers": [
     {
-      "url": "http://0.0.0.0:4444"
+      "url": "http://45dc7d5803ee.ngrok.io"
+    },
+    {
+      "url": "http://0.0.0.0:4441"
     }
   ],
   "paths": {
-    "/Anthology": {
+    "/Anthologies": {
       "get": {
         "summary": "Get anthology tree",
         "tags": [
-          "Anthology"
+          "Anthology tree"
         ],
         "responses": {
           "200": {
@@ -41,11 +44,43 @@
             }
           }
         }
+      }
+    },
+    "/Anthology": {
+      "get": {
+        "summary": "Info for a specific resource",
+        "tags": [
+          "Anthology tree"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the anthology tree",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Expected response to a valid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "example": [
+                    "Tree in JSON format"
+                  ]
+                }
+              }
+            }
+          }
+        }
       },
       "post": {
         "summary": "Create a resource",
         "tags": [
-          "Anthology"
+          "Anthology tree"
         ],
         "requestBody": {
           "description": "Create new anthology tree",
@@ -55,7 +90,14 @@
               "schema": {
                 "example": {
                   "name": "something",
-                  "surname": "something"
+                  "content": { "core" : {
+                    "data" : [
+                      { "id" : "ajson1", "parent" : "#", "text" : "Simple root node" },
+                      { "id" : "ajson2", "parent" : "#", "text" : "Root node 2" },
+                      { "id" : "ajson3", "parent" : "ajson2", "text" : "Child 1" },
+                      { "id" : "ajson4", "parent" : "ajson2", "text" : "Child 2" }
+                    ]
+                  } }
                 }
               }
             }
@@ -69,45 +111,11 @@
             "description": "Bad request"
           }
         }
-      }
-    },
-    "/Anthology/{id}": {
-      "get": {
-        "summary": "Info for a specific resource",
-        "tags": [
-          "Anthology"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "description": "The id of the resource to retrieve",
-            "schema": {
-              "type": "number"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Expected response to a valid request",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "example": {
-                    "id": 5,
-                    "name": "something"
-                  }
-                }
-              }
-            }
-          }
-        }
       },
       "put": {
         "summary": "Update a specific item",
         "tags": [
-          "Anthology"
+          "Anthology tree"
         ],
         "parameters": [
           {
