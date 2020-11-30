@@ -20,12 +20,79 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46a9a893-bfd4-41a9-ab83-c7e57cf7c939" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/classes/Query.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ui/themes/default-dark/style.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ui/themes/default/style.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/AnthologyTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/AnthologyTree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swaggerConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/swaggerConfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/LICENSE-MIT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/component.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/demo/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/demo/basic/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ui/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/demo/basic/root.json" beforeDir="false" afterPath="$PROJECT_DIR$/Ui/root.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/dist/jstree.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ui/tree/jstree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/dist/jstree.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ui/tree/jstree.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/dist/themes/default-dark/32px.png" beforeDir="false" afterPath="$PROJECT_DIR$/Ui/themes/default-dark/32px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/dist/themes/default-dark/40px.png" beforeDir="false" afterPath="$PROJECT_DIR$/Ui/themes/default-dark/40px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/dist/themes/default-dark/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Ui/themes/default-dark/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/dist/themes/default-dark/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/dist/themes/default-dark/throbber.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Ui/themes/default-dark/throbber.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/dist/themes/default/32px.png" beforeDir="false" afterPath="$PROJECT_DIR$/Ui/themes/default/32px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/dist/themes/default/40px.png" beforeDir="false" afterPath="$PROJECT_DIR$/Ui/themes/default/40px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/dist/themes/default/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Ui/themes/default/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/dist/themes/default/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/dist/themes/default/throbber.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Ui/themes/default/throbber.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/jstree.jquery.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/intro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/jstree.changed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/jstree.checkbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/jstree.conditionalselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/jstree.contextmenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/jstree.dnd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/jstree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/jstree.massload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/jstree.search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/jstree.sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/jstree.state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/jstree.types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/jstree.unique.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/jstree.wholerow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/misc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/outro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/sample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/themes/base.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/themes/default-dark/32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/themes/default-dark/40px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/themes/default-dark/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/themes/default-dark/style.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/themes/default-dark/throbber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/themes/default/32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/themes/default/40px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/themes/default/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/themes/default/style.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/themes/default/throbber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/themes/main.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/themes/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/themes/responsive.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/src/vakata-jstree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/test/unit/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/test/unit/libs/qunit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/test/unit/libs/qunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/test/unit/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/test/visual/desktop/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/test/visual/mobile/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/test/visual/screenshots/desktop/.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/test/visual/screenshots/desktop/desktop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/test/visual/screenshots/desktop/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/test/visual/screenshots/mobile/.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/test/visual/screenshots/mobile/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/jstree-master/test/visual/screenshots/mobile/mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/test/unit/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/test/unit/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/test/unit/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/test/unit/test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +125,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/classes" />
-      <recent name="$PROJECT_DIR$/helpers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/class" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/TMP/jstree-master/demo/basic/tree" />
+      <recent name="$PROJECT_DIR$/TMP/jstree-master/demo/basic" />
+      <recent name="$PROJECT_DIR$/classes" />
+      <recent name="$PROJECT_DIR$/helpers" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -85,7 +155,8 @@
       <workItem from="1606373490379" duration="6789000" />
       <workItem from="1606395609781" duration="8782000" />
       <workItem from="1606459689103" duration="1416000" />
-      <workItem from="1606461390557" duration="14825000" />
+      <workItem from="1606461390557" duration="18773000" />
+      <workItem from="1606741491241" duration="601000" />
     </task>
     <servers />
   </component>
