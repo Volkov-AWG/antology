@@ -1,6 +1,6 @@
 const express = require('express');
 const {getAnthology, addAnthology, deleteAnthology, updateAnthology, getAnthologies} = require('./helpers/AnthologyTree');
-const {getTree} = require('./helpers/Interface');
+const {getTree, saveTree} = require('./helpers/Interface');
 const app = express();
 
 const swaggerUi = require("swagger-ui-express");
@@ -15,9 +15,12 @@ app.route('/Anthology')
 app
     .route('/Anthologies')
     .get(getAnthologies)
-app.set('view engine', 'pug')
+app.set('view engine', 'html')
+   .use(express.urlencoded())
+   .use(express.json())
    .route('/interface')
    .get(getTree)
+   .post(saveTree)
 
 app.listen(4441, function(){   // порт 4444 можно указать любой свободный
     console.log('Api start')
