@@ -20,15 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46a9a893-bfd4-41a9-ab83-c7e57cf7c939" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/index_.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/selectData.json.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/helpers/Interface.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/Interface.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/error.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/init.sql/Tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index_.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index_.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,24 +54,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/views" />
       <recent name="$PROJECT_DIR$/dbscript/init.sql" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/class" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/helpers" />
       <recent name="$PROJECT_DIR$/dbscript" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/TMP/jstree-master/demo/basic/tree" />
       <recent name="$PROJECT_DIR$/TMP/jstree-master/demo/basic" />
-      <recent name="$PROJECT_DIR$/classes" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -100,11 +98,19 @@
       <workItem from="1608621794761" duration="625000" />
       <workItem from="1608903339022" duration="5706000" />
       <workItem from="1608960238457" duration="7798000" />
+      <workItem from="1610356865682" duration="893000" />
+      <workItem from="1610436949477" duration="1453000" />
+      <workItem from="1610538642884" duration="9498000" />
+      <workItem from="1610707148089" duration="2298000" />
+      <workItem from="1610951448287" duration="5517000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
