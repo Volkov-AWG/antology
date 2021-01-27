@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+ <input id="inputFile" type="file"  onchange="readFile()">
+<div><button id="button" onclick="prop='root';create()" style="margin: 10px 0 10px 0">Create new tree</button></div>
+<div id="container">
+  </div>
+    <input id="inputText" type="text" style="display: none; margin: 10px 0 10px 0">
+    <button id="but" onclick="newTree()" style="display: none" style="margin: 10px 0 10px 0">Ok</button>
+     <button id="root" onclick="prop='root';create()" style="display: none; margin:10px 0 10px 50px;">+</button>
+
+<script type="text/javascript" src="index.js"></script>
+<button onclick="save()">Load tree in JSON</button>
+</body>
+</html>
