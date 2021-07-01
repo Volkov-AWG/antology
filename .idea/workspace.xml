@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,13 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46a9a893-bfd4-41a9-ab83-c7e57cf7c939" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/helpers/selectData.json.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker_postgres_init.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/Interface.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/Interface.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init.sql/Tables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index_.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index_.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsonTest/WebPrDb.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsonTest/WebPrDb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsonTest/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsonTest/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swaggerConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/swaggerConfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +59,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -103,6 +106,19 @@
       <workItem from="1610538642884" duration="9498000" />
       <workItem from="1610707148089" duration="2298000" />
       <workItem from="1610951448287" duration="5517000" />
+      <workItem from="1611846666635" duration="599000" />
+      <workItem from="1612162741571" duration="16610000" />
+      <workItem from="1612868847847" duration="1202000" />
+      <workItem from="1612876105304" duration="601000" />
+      <workItem from="1612879729865" duration="599000" />
+      <workItem from="1612882630381" duration="1220000" />
+      <workItem from="1613479245612" duration="1372000" />
+      <workItem from="1613717306971" duration="1198000" />
+      <workItem from="1613828668840" duration="1404000" />
+      <workItem from="1617892882312" duration="1220000" />
+      <workItem from="1619181336452" duration="550000" />
+      <workItem from="1619185178310" duration="2304000" />
+      <workItem from="1621862081117" duration="629000" />
     </task>
     <servers />
   </component>
@@ -123,5 +139,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

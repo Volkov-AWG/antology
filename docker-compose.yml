@@ -5,13 +5,13 @@ services:
     container_name: postgres_container
     image: postgres
     environment:
-      POSTGRES_DB: ${POSTGRES_DB:-posgres}
+      DATABASE_HOST: 127.0.0.1
+      POSTGRES_DB: ${POSTGRES_DB:-postgres}
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
       PGDATA: /data/postgres
     volumes:
-      - postgres:/data/postgres
-      - ./init:/init.sql
+      - ./docker_postgres_init.sql:/docker-entrypoint-initdb.d/docker_postgres_init.sql
     ports:
       - "1111:5432"
     networks:
@@ -44,4 +44,3 @@ networks:
 volumes:
   postgres:
   pgadmin:
-  init:
