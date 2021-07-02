@@ -89,15 +89,36 @@
             "application/json": {
               "schema": {
                 "example": {
+                  "root": {
+                          "core" : "main name",
+                          "id": 1,
+                          "child" : [
+                              {"value" : " second name1",
+                               "id" : 2,
+                               "child" : [
+                                   { "value" : "third name1",
+                                     "id" : 3
+                                   },
+                                   { "value" : "third name2",
+                                     "id" : 4
+                                   }
+                                   ]
+                              },
+                              {"value" : " second name2",
+                               "id" : 5,
+                               "child" : [
+                                   { "value" : "fourth name1",
+                                     "id" : 6
+                                   },
+                                   { "value" : "fourth name2",
+                                     "id" : 7
+                                   }
+                                   ]
+                              }
+                          ]
+                          },
                   "name": "something",
-                  "content": { "core" : {
-                    "data" : [
-                      { "id" : "ajson1", "parent" : "#", "text" : "Simple root node" },
-                      { "id" : "ajson2", "parent" : "#", "text" : "Root node 2" },
-                      { "id" : "ajson3", "parent" : "ajson2", "text" : "Child 1" },
-                      { "id" : "ajson4", "parent" : "ajson2", "text" : "Child 2" }
-                    ]
-                  } }
+                  "description": "some description"
                 }
               }
             }

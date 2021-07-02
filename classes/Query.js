@@ -11,7 +11,7 @@ class Query {
     }
     InsertTree(data){
         console.log()
-        return `insert into ${this.table}(name, content, description) values('${data.name}','${JSON.stringify(data.content)}', '');`
+        return `insert into ${this.table}(name, content, description) values('${data.name}','${JSON.stringify(data.root)}', '${data.description}');`
     }
 }
 module.exports = Query;

@@ -23,13 +23,169 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46a9a893-bfd4-41a9-ab83-c7e57cf7c939" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker_postgres_init.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsonTest/WebPrDb.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsonTest/WebPrDb.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsonTest/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsonTest/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swaggerConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/swaggerConfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/LICENSE-MIT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/component.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/demo/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/demo/basic/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/demo/basic/root.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/dist/jstree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/dist/jstree.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/dist/themes/default-dark/32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/dist/themes/default-dark/40px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/dist/themes/default-dark/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/dist/themes/default-dark/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/dist/themes/default-dark/throbber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/dist/themes/default/32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/dist/themes/default/40px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/dist/themes/default/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/dist/themes/default/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/dist/themes/default/throbber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/LICENSE-MIT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/component.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/demo/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/demo/basic/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/demo/basic/root.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/dist/jstree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/dist/jstree.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/dist/themes/default-dark/32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/dist/themes/default-dark/40px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/dist/themes/default-dark/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/dist/themes/default-dark/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/dist/themes/default-dark/throbber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/dist/themes/default/32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/dist/themes/default/40px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/dist/themes/default/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/dist/themes/default/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/dist/themes/default/throbber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/jstree.jquery.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/intro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/jstree.changed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/jstree.checkbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/jstree.conditionalselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/jstree.contextmenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/jstree.dnd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/jstree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/jstree.massload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/jstree.search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/jstree.sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/jstree.state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/jstree.types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/jstree.unique.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/jstree.wholerow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/misc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/outro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/sample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/themes/base.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/themes/default-dark/32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/themes/default-dark/40px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/themes/default-dark/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/themes/default-dark/style.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/themes/default-dark/throbber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/themes/default/32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/themes/default/40px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/themes/default/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/themes/default/style.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/themes/default/throbber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/themes/main.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/themes/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/themes/responsive.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/src/vakata-jstree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/test/unit/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/test/unit/libs/qunit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/test/unit/libs/qunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/test/unit/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/test/visual/desktop/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/test/visual/mobile/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/test/visual/screenshots/desktop/.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/test/visual/screenshots/desktop/desktop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/test/visual/screenshots/desktop/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/test/visual/screenshots/mobile/.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/test/visual/screenshots/mobile/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree-master/test/visual/screenshots/mobile/mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/jstree.jquery.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/intro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/jstree.changed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/jstree.checkbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/jstree.conditionalselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/jstree.contextmenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/jstree.dnd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/jstree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/jstree.massload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/jstree.search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/jstree.sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/jstree.state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/jstree.types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/jstree.unique.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/jstree.wholerow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/misc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/outro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/sample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/themes/base.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/themes/default-dark/32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/themes/default-dark/40px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/themes/default-dark/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/themes/default-dark/style.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/themes/default-dark/throbber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/themes/default/32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/themes/default/40px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/themes/default/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/themes/default/style.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/themes/default/throbber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/themes/main.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/themes/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/themes/responsive.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/src/vakata-jstree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/test/unit/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/test/unit/libs/qunit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/test/unit/libs/qunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/test/unit/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/test/visual/desktop/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/test/visual/mobile/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/test/visual/screenshots/desktop/.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/test/visual/screenshots/desktop/desktop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/test/visual/screenshots/desktop/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/test/visual/screenshots/mobile/.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/test/visual/screenshots/mobile/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMP/vakata-jstree-6dce227/test/visual/screenshots/mobile/mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ui/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ui/root.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ui/themes/default-dark/32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ui/themes/default-dark/40px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ui/themes/default-dark/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ui/themes/default-dark/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ui/themes/default-dark/throbber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ui/themes/default/32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ui/themes/default/40px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ui/themes/default/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ui/themes/default/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ui/themes/default/throbber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ui/tree/jstree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ui/tree/jstree.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker_postgres_init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docker_postgres_init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/AnthologyTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/AnthologyTree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/WebPrDb.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsonTest/WebPrDb.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsonTest/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsonTest/newJson.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index_.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +213,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../LeroyMerlin/Repository/opp--functional" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -119,6 +280,7 @@
       <workItem from="1619181336452" duration="550000" />
       <workItem from="1619185178310" duration="2304000" />
       <workItem from="1621862081117" duration="629000" />
+      <workItem from="1625124604267" duration="8607000" />
     </task>
     <servers />
   </component>

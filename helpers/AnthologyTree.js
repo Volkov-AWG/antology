@@ -25,9 +25,10 @@ const query = new Query(config.tables.tree)
     });
     await request.on("end", async () => {
       const parsedBody = Buffer.concat(body).toString();
-      const message = parsedBody.split('=')[1];
+      const message = parsedBody.split('')[1];
       res = await db.insert(query.InsertTree(JSON.parse(parsedBody)));
-      console.log(`message: ${JSON.stringify(res)}`);
+      //на ветки
+      console.log(`message: ${parsedBody}`);
       response.status(200).json({command:res.command, rowCount:res.rowCount});
     });
   }
