@@ -7,7 +7,9 @@ const config = {
       database: 'postgres'
     },
     tables:{
-        tree: 'anthologyTree'
+        tree: 'anthologyTree',
+        branch: 'branch',
+        urllist: 'urlList'
     }
 };
 

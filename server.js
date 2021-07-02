@@ -1,5 +1,5 @@
 const express = require('express');
-const {getAnthology, addAnthology, deleteAnthology, updateAnthology, getAnthologies} = require('./helpers/AnthologyTree');
+const {getAnthology, addAnthology, deleteAnthology, updateAnthology, getAnthologies, getBranch, getBranches, getUrlList} = require('./helpers/AnthologyTree');
 const {getTree, saveTree} = require('./helpers/Interface');
 const app = express();
 
@@ -12,9 +12,14 @@ app.route('/Anthology')
    .post(addAnthology)
    .patch(updateAnthology)
    .delete(deleteAnthology)
-app
-    .route('/Anthologies')
-    .get(getAnthologies)
+app.route('/Anthologies')
+   .get(getAnthologies)
+app.route('/Branches')
+   .get(getBranches)
+app.route('/Branch')
+   .get(getBranch)
+app.route('/urllist')
+   .get(getUrlList)
 app.set('view engine', 'html')
    .use(express.urlencoded())
    .use(express.json())

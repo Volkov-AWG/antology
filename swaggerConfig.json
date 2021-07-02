@@ -46,6 +46,139 @@
         }
       }
     },
+    "/Branches": {
+      "get": {
+        "summary": "Get all branch",
+        "tags": [
+          "Branch"
+        ],
+        "responses": {
+          "200": {
+            "description": "An array of blog posts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "example": {
+                      "List of branches": [
+                        {
+                          "id": 2,
+                          "treeID" : 100,
+                          "keys" : "word1 word2 word3 word 4"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Branch": {
+      "get": {
+        "summary": "Get branches by tree ID",
+        "tags": [
+          "Branch"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the anthology tree",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "An array of blog posts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "example": {
+                      "List of tree's branch": [
+                        {
+                          "id": 1,
+                          "treeID" : 100,
+                          "keys" : "word1 word2 word3 word 5"
+                        },
+                        {
+                          "id": 2,
+                          "treeID" : 100,
+                          "keys" : "word1 word2 word3 word 6"
+                        },
+                        {
+                          "id": 3,
+                          "treeID" : 100,
+                          "keys" : "word1 word7 word8 word 9"
+                        },
+                        {
+                          "id": 4,
+                          "treeID" : 100,
+                          "keys" : "word1 word7 word8 word 10"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/urllist": {
+      "get": {
+        "summary": "Get url list",
+        "tags": [
+          "URL List"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the anthology tree",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "An array of blog posts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "example": {
+                      "List of doc's url from libraries": [
+                        {
+                          "treeId": 1,
+                          "branchId" : 1,
+                          "name" : "Name",
+                          "annotation" : "Annotation",
+                          "link" : "www.example.com/link",
+                          "authors" : "Author's name",
+                          "journal" : "Journal's name",
+                          "journal_link": "www.example.com/journal_link"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/Anthology": {
       "get": {
         "summary": "Info for a specific resource",
@@ -90,10 +223,10 @@
               "schema": {
                 "example": {
                   "root": {
-                          "core" : "main name",
+                          "value" : "main name",
                           "id": 1,
                           "child" : [
-                              {"value" : " second name1",
+                              {"value" : "second name1",
                                "id" : 2,
                                "child" : [
                                    { "value" : "third name1",
@@ -104,7 +237,7 @@
                                    }
                                    ]
                               },
-                              {"value" : " second name2",
+                              {"value" : "second name2",
                                "id" : 5,
                                "child" : [
                                    { "value" : "fourth name1",
