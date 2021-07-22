@@ -1,11 +1,15 @@
 const express = require('express');
-const {getAnthology, addAnthology, deleteAnthology, updateAnthology, getAnthologies, getBranch, getBranches, getUrlList} = require('./helpers/AnthologyTree');
-const {getTree, saveTree} = require('./helpers/Interface');
+const {getAnthology, addAnthology, deleteAnthology,
+    updateAnthology, getAnthologies, getBranch,
+    getBranches, getUrlUpdate, getUrlAll,
+    uiGetAntol, uiGetBranch, uiGetUrl,
+    getUrlOne, uiGetUrlTrOne, uiGetUrlBrOne} = require('./helpers/AnthologyTree');
 const app = express();
 
 const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("./swaggerConfig.json");
 
+//API for Swagger
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.route('/Anthology')
    .get(getAnthology)
@@ -18,14 +22,28 @@ app.route('/Branches')
    .get(getBranches)
 app.route('/Branch')
    .get(getBranch)
-app.route('/urllist')
-   .get(getUrlList)
-app.set('view engine', 'html')
-   .use(express.urlencoded())
-   .use(express.json())
-   .route('/interface')
-   .get(getTree)
-   .post(saveTree)
+app.route('/urlupdate')
+   .get(getUrlUpdate)
+app.route('/urlall')
+    .get(getUrlAll)
+app.route('/urlone')
+    .get(getUrlOne)
+
+//API fro UI
+app.route('/ui/anthology')
+   .get(uiGetAntol)
+app.route('/ui/branches')
+    .get(uiGetBranch)
+app.route('/ui/urllist')
+    .get(uiGetUrl)
+app.route('/ui/treebyid')
+    .get(getAnthology)
+app.route('/ui/branchbyid')
+    .get(getBranch)
+app.route('/ui/urlsbytreeid')
+    .get(uiGetUrlTrOne)
+app.route('/ui/urlsbybranchid')
+    .get(uiGetUrlBrOne)
 
 app.listen(4441, function(){   // порт 4444 можно указать любой свободный
     console.log('Api start')

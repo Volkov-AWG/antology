@@ -133,7 +133,7 @@
         }
       }
     },
-    "/urllist": {
+    "/urlupdate": {
       "get": {
         "summary": "Get url list",
         "tags": [
@@ -168,6 +168,37 @@
                           "authors" : "Author's name",
                           "journal" : "Journal's name",
                           "journal_link": "www.example.com/journal_link"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/urlall": {
+      "get": {
+        "summary": "Get all branch",
+        "tags": [
+          "URL List"
+        ],
+        "responses": {
+          "200": {
+            "description": "An array of blog posts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "example": {
+                      "List of branches": [
+                        {
+                          "id": 2,
+                          "treeID" : 100,
+                          "keys" : "word1 word2 word3 word 4"
                         }
                       ]
                     }
