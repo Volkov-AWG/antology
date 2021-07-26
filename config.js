@@ -2,8 +2,8 @@ const config = {
     db: {
       user: 'postgres',
       password: 'changeme',
-      host: '0.0.0.0',
-      port: '1111',
+      host: '10.5.0.2',
+      port: '5432',
       database: 'postgres'
     },
     tables:{

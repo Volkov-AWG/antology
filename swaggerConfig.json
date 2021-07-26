@@ -6,10 +6,7 @@
   },
   "servers": [
     {
-      "url": "http://0.0.0.0:4441"
-    },
-    {
-      "url": "http://45dc7d5803ee.ngrok.io"
+      "url": "http://10.5.0.4:4444"
     }
   ],
   "paths": {
