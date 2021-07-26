@@ -45,6 +45,22 @@ app.route('/ui/urlsbytreeid')
 app.route('/ui/urlsbybranchid')
     .get(uiGetUrlBrOne)
 
-app.listen(4441, function(){   // порт 4444 можно указать любой свободный
+//API fro UI
+app.route('/ui/anthology')
+   .get(uiGetAntol)
+app.route('/ui/branches')
+    .get(uiGetBranch)
+app.route('/ui/urllist')
+    .get(uiGetUrl)
+app.route('/ui/treebyid')
+    .get(getAnthology)
+app.route('/ui/branchbyid')
+    .get(getBranch)
+app.route('/ui/urlsbytreeid')
+    .get(uiGetUrlTrOne)
+app.route('/ui/urlsbybranchid')
+    .get(uiGetUrlBrOne)
+
+app.listen(4444, function(){   // порт 4444 можно указать любой свободный
     console.log('Api start')
 })
