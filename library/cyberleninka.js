@@ -2,8 +2,8 @@ const DB = require('../classes/Db');
 const Query = require('../classes/Query');
 const axios = require ('axios');
 const config = require('../config');
+const utils = require('../helpers/utils');
 
-const fs = require('fs');
 const db = new DB(config.db);
 const query_u = new Query(config.tables.urllist);
 
@@ -49,6 +49,7 @@ class leninka {
         ins_url = ins_url.substring(0, ins_url.length - 1);
         const deleted = await db.selectQuery(query_u.DeleteUrl(branches[0].treeid));
         await db.insert(query_u.InsertUrl(ins_url));
+        await utils.asyncSleep(config.waittime);
     }
 
 }
