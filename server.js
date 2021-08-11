@@ -10,7 +10,7 @@ const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("./swaggerConfig.json");
 
 //API for Swagger
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.route('/Anthology')
    .get(getAnthology)
    .post(addAnthology)
@@ -61,6 +61,6 @@ app.route('/ui/urlsbytreeid')
 app.route('/ui/urlsbybranchid')
     .get(uiGetUrlBrOne)
 
-app.listen(4444, function(){   // порт 4444 можно указать любой свободный
+app.listen(4402, function(){
     console.log('Api start')
 })
