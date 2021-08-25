@@ -12,7 +12,7 @@
   "paths": {
     "/Anthologies": {
       "get": {
-        "summary": "Get anthology tree",
+        "summary": "Get all tree",
         "tags": [
           "Anthology tree"
         ],
@@ -35,6 +35,125 @@
                         }
                       ]
                     }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Anthology": {
+      "get": {
+        "summary": "Get tree by id",
+        "tags": [
+          "Anthology tree"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the anthology tree",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Expected response to a valid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "example": [
+                    "Tree in JSON format"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create a resource",
+        "tags": [
+          "Anthology tree"
+        ],
+        "requestBody": {
+          "description": "Create new anthology tree",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "example": {
+                  "root": {
+                    "value" : "main name",
+                    "id": 1,
+                    "child" : [
+                      {"value" : "second name1",
+                        "id" : 2,
+                        "child" : [
+                          { "value" : "third name1",
+                            "id" : 3
+                          },
+                          { "value" : "third name2",
+                            "id" : 4
+                          }
+                        ]
+                      },
+                      {"value" : "second name2",
+                        "id" : 5,
+                        "child" : [
+                          { "value" : "fourth name1",
+                            "id" : 6
+                          },
+                          { "value" : "fourth name2",
+                            "id" : 7
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "name": "something",
+                  "description": "some description"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Null response"
+          },
+          "400": {
+            "description": "Bad request"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete tree by id",
+        "tags": [
+          "Anthology tree"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": true,
+            "description": "The id of tree to delete",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "example": {
+                    "message" : "deleted"
                   }
                 }
               }
@@ -130,11 +249,11 @@
         }
       }
     },
-    "/urlupdate": {
+    "/RunCollectDataByTreeId": {
       "get": {
-        "summary": "Get url list",
+        "summary": "Get data list from libraries",
         "tags": [
-          "URL List"
+          "Data List"
         ],
         "parameters": [
           {
@@ -155,7 +274,7 @@
                   "type": "array",
                   "items": {
                     "example": {
-                      "List of doc's url from libraries": [
+                      "List of doc's from libraries": [
                         {
                           "treeId": 1,
                           "branchId" : 1,
@@ -176,11 +295,21 @@
         }
       }
     },
-    "/urlall": {
+    "/DataByBranchId": {
       "get": {
-        "summary": "Get all branch",
+        "summary": "Get all data by branch id",
         "tags": [
-          "URL List"
+          "Data List"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the branch",
+            "schema": {
+              "type": "integer"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -191,11 +320,16 @@
                   "type": "array",
                   "items": {
                     "example": {
-                      "List of branches": [
+                      "List of doc's from libraries": [
                         {
-                          "id": 2,
-                          "treeID" : 100,
-                          "keys" : "word1 word2 word3 word 4"
+                          "treeId": "*id of tree with your branch*",
+                          "branchId" : "*your branch id*",
+                          "name" : "Name",
+                          "annotation" : "Annotation",
+                          "link" : "www.example.com/link",
+                          "authors" : "Author's name",
+                          "journal" : "Journal's name",
+                          "journal_link": "www.example.com/journal_link"
                         }
                       ]
                     }
@@ -206,140 +340,7 @@
           }
         }
       }
-    },
-    "/Anthology": {
-      "get": {
-        "summary": "Info for a specific resource",
-        "tags": [
-          "Anthology tree"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "description": "The id of the anthology tree",
-            "schema": {
-              "type": "integer"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Expected response to a valid request",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "example": [
-                    "Tree in JSON format"
-                  ]
-                }
-              }
-            }
-          }
-        }
-      },
-      "post": {
-        "summary": "Create a resource",
-        "tags": [
-          "Anthology tree"
-        ],
-        "requestBody": {
-          "description": "Create new anthology tree",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "example": {
-                  "root": {
-                          "value" : "main name",
-                          "id": 1,
-                          "child" : [
-                              {"value" : "second name1",
-                               "id" : 2,
-                               "child" : [
-                                   { "value" : "third name1",
-                                     "id" : 3
-                                   },
-                                   { "value" : "third name2",
-                                     "id" : 4
-                                   }
-                                   ]
-                              },
-                              {"value" : "second name2",
-                               "id" : 5,
-                               "child" : [
-                                   { "value" : "fourth name1",
-                                     "id" : 6
-                                   },
-                                   { "value" : "fourth name2",
-                                     "id" : 7
-                                   }
-                                   ]
-                              }
-                          ]
-                          },
-                  "name": "something",
-                  "description": "some description"
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "201": {
-            "description": "Null response"
-          },
-          "400": {
-            "description": "Bad request"
-          }
-        }
-      },
-      "put": {
-        "summary": "Update a specific item",
-        "tags": [
-          "Anthology tree"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "description": "The id of the resource to update",
-            "schema": {
-              "type": "number"
-            }
-          }
-        ],
-        "requestBody": {
-          "description": "Updated fields for resource",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "example": {
-                  "id": 2,
-                  "name": "something"
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Expected response to a valid request",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "example": {
-                    "id": 5,
-                    "name": "updated name"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
     }
+
   }
 }

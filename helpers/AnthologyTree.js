@@ -16,6 +16,7 @@ const pars_branch = new treeBranchParsing();
   const  getAnthologies = async (request, response) => {
     const res = await db.selectQuery(query.SelectAllTrees());
     console.log(res);
+
     response.status(200).json(res);
   }
 
@@ -26,31 +27,39 @@ const pars_branch = new treeBranchParsing();
   }
 
   const  getBranch = async (request, response) => {
-    const res = await db.selectQuery(query_b.SelectBranchByTreeID(request.query.id));
+    let res = await db.selectQuery(query_b.SelectBranchByTreeID(request.query.id));
+    if (res == "") { res = `No branch with tree id ${request.query.id}`}
     console.log(res);
     response.status(200).json(res);
   }
 
   const  getAnthology = async (request, response) => {
-    const res = await db.selectQuery(query.SelectTreeById(request.query.id));
+    let res = await db.selectQuery(query.SelectTreeById(request.query.id));
+    if (res == "") { res = `No tree with id ${request.query.id}`}
     console.log(res);
     response.status(200).json(res);
   }
 
   const  getUrlUpdate = async (request, response) => {
+    let res;
     const branches = await db.selectQuery(query_b.SelectBranchByTreeID(request.query.id));
-    await cl.getLeninka(branches);
-    const res = await db.selectQuery(query_u.SelectUrlByTreeID(request.query.id));
+    if (branches == "") { res = `No tree with id ${request.query.id}`}
+    else {
+      await cl.getLeninka(branches);
+      res = await db.selectQuery(query_u.SelectUrlByTreeID(request.query.id));
+    }
     response.status(200).json(res);
   }
 
-  const  getUrlAll = async (request, response) => {
-    const res = await db.selectQuery(query_u.SelectUrl());
+  const  getDataByBranchId = async (request, response) => {
+    let res = await db.selectQuery(query_u.SelectUrlByBranchID(request.query.id));
+    if (res == "") { res = `No data for branch ${request.query.id}`}
     console.log(res);
     response.status(200).json(res);
   }
   const  getUrlOne = async (request, response) => {
-    const res = await db.selectQuery(query_u.SelectUrlByTreeID(request.query.id));
+    let res = await db.selectQuery(query_u.SelectUrlByTreeID(request.query.id));
+    if (res == "") { res = `No tree with id ${request.query.id}`}
     console.log(res);
     response.status(200).json(res);
   }
@@ -69,12 +78,12 @@ const pars_branch = new treeBranchParsing();
     });
   }
 
-  const updateAnthology = async (request, response) => {
-    response.status(200).json({name:'updateAntology'});
-  }
-
   const deleteAnthology = async (request, response) => {
-    response.status(200).json({name:'delAntology'});
+    await db.selectQuery(query.DeleteTreeById(request.query.id));
+    await db.selectQuery(query_b.DeleteBranchesByTreeId(request.query.id));
+    await db.selectQuery(query_u.DeleteDataByTreeId(request.query.id));
+
+    response.status(200).json({name:'Delete success'});
   }
 
 //-----------------For UI
@@ -123,9 +132,9 @@ const pars_branch = new treeBranchParsing();
 
 
 module.exports = {
-  getAnthology, addAnthology, updateAnthology,
-  deleteAnthology, getAnthologies, getBranch,
-  getBranches, getUrlUpdate, getUrlAll,
+  getAnthology, addAnthology,  deleteAnthology,
+  getAnthologies, getBranch,  getBranches,
+  getUrlUpdate, getDataByBranchId,
   getUrlOne, uiGetAntol, uiGetBranch,
   uiGetUrl, uiGetUrlTrOne, uiGetUrlBrOne
 }

@@ -43,6 +43,18 @@ class Query {
         console.log()
         return `delete from ${this.table} where link like '%cyberleninka.ru%' and treeid = ${data};`
     }
+    DeleteTreeById(data){
+        console.log()
+        return `delete from ${this.table} where id = ${data};`
+    }
+    DeleteBranchesByTreeId(data){
+        console.log()
+        return `delete from ${this.table} where treeID = ${data};`
+    }
+    DeleteDataByTreeId(data){
+        console.log()
+        return `delete from ${this.table} where treeid = ${data};`
+    }
 
     //For UI
     SelectTreeForUi(name, desc){
